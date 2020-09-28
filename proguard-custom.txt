@@ -115,5 +115,13 @@
 -keep public class * extends org.apache.cordova.CordovaPlugin
 -keep class com.ionic.keyboard.IonicKeyboard.** { *; }
 
+# Okio
 -dontwarn okio.**
+
+# OkHttp
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.squareup.okhttp.** { *; }
+-keep interface com.squareup.okhttp.** { *; }
+-dontwarn com.squareup.okhttp.**
 
