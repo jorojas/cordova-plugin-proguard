@@ -108,3 +108,11 @@
 # These clases contain references to cordova webView
 -keep class com.ionicframework.cordova.webview.** {*; }
 -keep class com.ionicframework.cordova.webview.*
+
+# Additional stuff for ionic
+# ionic
+-keep class org.apache.cordova.** { *; }
+-keep public class * extends org.apache.cordova.CordovaPlugin
+-keep class com.ionic.keyboard.IonicKeyboard.** { *; }
+
+
