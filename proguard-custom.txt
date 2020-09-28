@@ -115,4 +115,5 @@
 -keep public class * extends org.apache.cordova.CordovaPlugin
 -keep class com.ionic.keyboard.IonicKeyboard.** { *; }
 
+-dontwarn okio.**
 
